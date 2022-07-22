@@ -1,0 +1,113 @@
+/*main*/
+
+main {
+	
+    text-align: center;
+}
+
+.toolbar {
+	display: flex;
+    justify-content: space-evenly;
+}
+
+.toolbar button {
+	background: var(--Beige);
+	color: var(--Marron);
+	text-align: center;
+	border: none;
+	font-weight: bold;
+	padding: 1rem;
+    transition: all .5s linear;
+}
+
+.toolbar button:hover:not(.current) {
+	background: var(--Rouge);
+}
+
+.toolbar button:hover {
+	color: #fff;
+}
+
+.toolbar button:focus {
+	background: var(--Marron);
+	color: #fff;
+}
+
+.gallery {
+	background-color: var(--Beige);
+	padding: 2rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery figure{
+	margin: 2rem 1rem;
+	position: relative;
+	flex: 45%;
+}
+
+.gallery figure > img {
+    margin: auto;
+    box-shadow: 2px 2px 5px var(--Marron);
+    transition: all 1s ease-out;
+}
+
+.gallery figcaption {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    opacity: 0;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4c4343d4;
+    color: #fff;
+    outline: solid 3px;
+    outline-offset: -2em;
+    transition: all .5s ease-out;
+    cursor: default;
+}
+
+.gallery figcaption > img {
+    width: 2rem;
+    height: 4rem;
+}
+
+.gallery figure:hover figcaption, .gallery figure:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+/**************************************/
+
+/*media querry*/
+
+/*tablette*/
+@media screen and (min-width: 780px) {
+    
+    .toolbar {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .gallery figure {
+        flex: 30%;
+    }
+    
+    h2 {
+        line-height: 5rem;
+    }
+    
+}
+  
+   
+/*Desktop*/
+@media screen and (min-width: 980px) {
+
+}

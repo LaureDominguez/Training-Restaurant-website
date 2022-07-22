@@ -1,0 +1,28 @@
+/*main*/
+
+/*formulaire*/
+
+form {
+	background: var(--Beige);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+fieldset {
+	flex: 45%;
+}
+
+/**************************************/
+
+/*media querry*/
+
+/*tablette*/
+@media screen and (min-width: 780px) {
+    
+}
+  
+   
+/*Desktop*/
+@media screen and (min-width: 980px) {
+	
+}

@@ -1,0 +1,167 @@
+/*main*/
+
+/*carousel*/
+
+.slider {
+	padding: 1em 0;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-prev:before, .slick-next::before {
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: var(--Rouge);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: var(--Rouge);
+}
+
+
+/**************************************/
+
+/*menu*/
+
+.menu {
+	background: var(--Beige);
+	margin-bottom: 3rem;
+}
+
+.menu figcaption {
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.menu figcaption > strong{
+	font-size: 5rem;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.menu figure {
+	margin: 0;
+}
+
+.menu ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.menu li::before {
+    content: "\f005";
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--Rouge);
+}
+
+.menu li {
+	padding: 1rem;
+	border-bottom: dashed 1px var(--Marron);
+}
+
+/*bouton more*/
+
+.more {
+	background: var(--Marron);
+	color: #fff;
+	font-weight: bold;
+	padding: 1rem;
+	display: inline-flex;
+	justify-content: center;
+    align-items: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 2em;
+    transition: all .5s;
+}
+
+.more img {
+	width: 3rem;
+	margin: 0 1rem;
+}
+
+.more:hover {
+	/*outline: solid 1px;
+    outline-offset: -0.5em;*/
+    background: var(--Rouge);
+}
+
+
+/*menu hover*/
+
+.menu > figure {
+    position: relative;
+}
+
+.menu > figure > figcaption {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: rgba(76,67,67,.9);
+    color: #fff;
+    outline: solid 2px;
+    outline-offset: -2em;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.menu figure:hover > figcaption {
+    opacity: 1;
+}
+
+/**************************************/
+
+/*media querry*/
+
+/*tablette*/
+@media screen and (min-width: 780px) {
+    
+}
+  
+   
+/*Desktop*/
+@media screen and (min-width: 980px) {
+	h2 {
+		width: 100%;
+	}
+	
+	#intro img {
+		width: 40%;
+		float: right;
+		margin-left: 3rem;
+	}
+	
+	#intro p {
+		margin-top: 0;
+		padding-right: 3rem;
+	}
+	
+	 .menu {
+	    width: 30%;
+	 }
+	 
+	 #menu {
+	 	display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	 }
+}

@@ -1,4 +1,6 @@
-	<footer>
+<!----------------------------------------------------->
+
+<footer>
 		<section class="contact">
 			<aside>
 				<h4>Opening hours</h4>
@@ -33,3 +35,26 @@
 			<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
 		</section>
 	</footer>
+
+	<!--ajouter les 3 fichiers javascript :-->
+    <!--ajouter le fichier jquery (à téléchager) dans une balise script-->
+    <script type="text/javascript" src="modules/jquery/jquery-3.5.1.js"></script>
+
+<!---------------------------Slick-------------------------->
+
+    <!--ajouter le fichier javascript de slick-->
+    <script type="text/javascript" src="modules/slick/slick.min.js"></script>
+
+    <!-- Indiquer sur quel élément de la page on applique le plugin slick -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slider').slick({
+             //  setting - name: setting - value
+            	dots: true,
+            });
+        });
+    </script>
+	
+</body>
+
+</html>

@@ -1,5 +1,7 @@
 <?php include "header.php"; ?>
 
+<!----------------------------------------------------->
+
 <main class="container">
 		
 		<div class="slider">
@@ -95,5 +97,6 @@
 			
 		</section>
 	</main>
+
 	
 	<?php include "footer.php"; ?>
